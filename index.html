@@ -3,32 +3,49 @@
 
 <body>
     <h2>Hello World</h2>
-    <main>
-        <h3>Cat Photos</h3>
-        <!-- TODO: Add link to cat photos-->
-        <p>Click for more <a href="https://www.freecatphotoapp.com/" target="_blank">cat photos</a>.</p>
-        <!-- anchor tags (a) == links in html -->
-        <a href="https://www.freecatphotoapp.com/" target="_blank"><img src="./cat1.jpg" width="300"
-                alt="A cute orange cat lying on its back."></a>
-        <h3>Cat List</h3>
-        <p>Things cats <em><strong>love:</strong></em></p>
-        <ul>
-            <li>cat nips</li>
-            <li>laser pointers</li>
-            <li>lasagna</li>
-            <li>to trouble you</li>
-            <li>look cute</li>
-        </ul>
-        <img src="./lasagna.jpg" alt="lasagna" width="300" height="200">
-        <p>Things cats <strong>hate:</strong></p>
-        <ol>
-            <li>flea treatment</li>
-            <li>thunder</li>
-            <li>you</li>
-            <li>other cats</li>
-            <li>your cat/s</li>
-        </ol>
-        <img src="https://cdn.freecodecamp.org/youtube/html-course/cats.jpg" alt="cats" width="300">
+    <br>
+    <h3>Cat Photos</h3>
+    <!-- TODO: Add link to cat photos-->
+    <p>Click for more <a href="https://www.freecatphotoapp.com/" target="_blank">cat photos</a>.</p>
+    <!-- anchor tags (a) == links in html -->
+    <a href="https://www.freecatphotoapp.com/" target="_blank"><img src="./cat1.jpg" width="300"
+            alt="A cute orange cat lying on its back."></a>
+    <h3>Cat List</h3>
+    <p>Things cats <em><strong>love:</strong></em></p>
+    <ul>
+        <li>cat nips</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+        <li>to trouble you</li>
+        <li>look cute</li>
+    </ul>
+    <img src="./lasagna.jpg" alt="lasagna" width="300" height="200">
+    <p>Things cats <strong>hate:</strong></p>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>you</li>
+        <li>other cats</li>
+        <li>your cat/s</li>
+    </ol>
+    <img src="https://cdn.freecodecamp.org/youtube/html-course/cats.jpg" alt="cats" width="300">
+    <br><br>
+    <form action="/submit-cat-photo">
+        <label for="caturl">Cat Photo URL: <input type="text" placeholder="cat photo url" id="caturl"
+                required></label></br><br>
+        <!-- id of input and for of label should be same to create a proper link between the two -->
+        <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor">
+            <!-- wrapping input in label makes the text selectable as well -->
+            Indoor</label><br><!--  name helps to select only one input element at once associated with a single name group -->
+        <label for="outdoor"><input type="radio" name="indoor-outdoor" id="outdoor" checked> Outdoor</label><br>
+        <label for="loving"><input type="checkbox" name="personality" id="loving"> Loving</label><br>
+        <label for="lazy"><input type="checkbox" name="personality" id="lazy"> Lazy</label><br>
+        <label for="energetic"><input type="checkbox" name="personality" id="energetic" checked> Energetic</label>
+        <br><br>
+        <button type="submit" value="submit">Submit</button>
+        <button type="reset" value="reset">Reset</button>
+        <!-- <button type="menu" value="menu">Menu</button> -->
+    </form>
     </main>
 </body>
 
